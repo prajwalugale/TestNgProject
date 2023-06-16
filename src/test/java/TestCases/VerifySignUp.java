@@ -21,8 +21,9 @@ public class VerifySignUp extends BaseClass {
 		obj.clickOnTryForFree().click();
 
 		SignUpPageObjects spo = new SignUpPageObjects(driver);
-		CommonUtilities.handleExplicitWait(2, spo.enterFirstname());
-		//Thread.sleep(2000);
+		// This is not working
+		// CommonUtilities.handleExplicitWait(2, spo.enterFirstname());
+		Thread.sleep(2000);
 		spo.enterFirstname().sendKeys(Constant.firstName);
 		spo.enterLastname().sendKeys(Constant.lastName);
 		spo.enterPhone().sendKeys(Constant.phone);

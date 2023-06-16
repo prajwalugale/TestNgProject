@@ -23,6 +23,7 @@ public class VerifySignUp extends BaseClass {
 		SignUpPageObjects spo = new SignUpPageObjects(driver);
 		// This is not working
 		// CommonUtilities.handleExplicitWait(2, spo.enterFirstname());
+		//add this
 		Thread.sleep(2000);
 		spo.enterFirstname().sendKeys(Constant.firstName);
 		spo.enterLastname().sendKeys(Constant.lastName);
